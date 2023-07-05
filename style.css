@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "StratosSkyeng";
+
+  src: url(./fonts/stratosskyengweb-regular.woff) format("woff");
+}
+
+body {
+  background-color: #004980;
+  margin: 0;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  background: #c2f5ff;
+  width: 480px;
+  height: 459px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-text {
+  color: #004980;
+  font-size: 40px;
+  font-family: StratosSkyeng;
+  line-height: 48px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  padding-left: 137px;
+  padding-right: 137px;
+}
+.container-level-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 165px);
+  gap: 24px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.buttons-button {
+  color: var(--blue-100, #0080c1);
+  background-color: white;
+  width: 96px;
+  height: 98px;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 64px;
+  font-family: StratosSkyeng;
+  line-height: 72px;
+  border-radius: 12px;
+  border: none;
+}
+.choice-button {
+  background-color: #0080c1;
+  color: white;
+  width: 96px;
+  height: 98px;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 64px;
+  font-family: StratosSkyeng;
+  line-height: 72px;
+  border-radius: 12px;
+  border: none;
+}
+.container-start-button {
+  display: flex;
+  width: 246px;
+  height: 48px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: var(--salad-60, #7ac100);
+}
+.start-button {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-family: StratosSkyeng;
+  line-height: 32px;
+  background: var(--salad-60, #7ac100);
+  border: none;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+}
+.card {
+  border: none;
+  padding: 0;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 22px;
+}
+.header-button {
+  width: 246px;
+  height: 48px;
+  background-color: #7ac100;
+  font-size: 24px;
+  font-family: StratosSkyeng;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  color: white;
+  border-radius: 12px;
+  border: none;
+}
+
+.timer {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+}
+.min-sec,
+.timer {
+  color: white;
+  font-family: StratosSkyeng;
+  margin: 0;
+}
+.min-sec {
+  padding-left: 45px;
+}
+.header-time-name {
+  display: flex;
+}
+.header-time-box {
+  width: 155px;
+  height: 91px;
+  box-sizing: border-box;
+}
+.hiden {
+  opacity: 30%;
+  transition: 2s ease;
+}
